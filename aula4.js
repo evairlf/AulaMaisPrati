@@ -76,3 +76,73 @@ console.log(--contador);//pre-decremento
 const passo = 5;
 contador += passo;// soma o da esquerda com o da direita(pode fazer com varios outros operadores como **, *)
 console.log(contador); 
+
+//() primeiro o que tem entre aspas
+//** sin la potenzia
+//* / % -> multiplicacao, dividir e porcentagem
+//+ -  -> mais e -
+//Lê-se da esquerda para direita
+
+//Operador       Funcao
+// ==           igual a
+// >            maior que 
+// =>            maior ou igual que 
+// <            menor que
+// <=            menor ou igual que
+// ===         identico a verifica o tipo e o valor(sempre usar essa coisa por convencao)
+// ==           igual a só verifica o valor
+// !=          diferente
+// !=          diferente estrito
+
+
+//Operador Lógico      Funcao
+//AND -- &&              E
+//OR  ||                OU
+//NOT !                 NAO
+
+console.log((10 > 5) && (5 < 10));//Só da true se os dois forem verdadeiros
+console.log((10 > 5) || (5 < 10));//Da true se pelo menos 1 for verdadeiro
+console.log((10 > 5) && !(5 < 10));//Negação da segunda sentencao junto com o operador logico && entao da false
+
+
+//Autenticação
+const usuario = "Evair";
+const senha = 123;
+
+const autenticacao = usuario === "Evair" && senha === 123;
+
+console.log(autenticacao);
+
+console.log(!true);//negacao
+console.log(!!true);//dupla negacao
+console.log(!!!true);//loucura
+
+//Ifzão da massa
+const visual = "feio";
+
+console.log("Oi gata quer tc?");
+if(visual === "feio"){
+    console.log("sai daqui ridiculo!");
+}else{
+    console.log("AIN GATUUU");
+}
+
+//operador ternário
+console.log("oi gata quer tc?");
+(visual === "feio") ? console.log("sai fora maluco") : console.log("claro lindono");
+
+const nota = 30;
+
+if(nota >= 60){
+    console.log("APROVADO");
+}else if(nota >= 40 && nota <= 59){
+    console.log("RECUPERACAO");
+}else{
+    console.log("Para de jogar lol e vai estudar!")
+}
+
+//Inputzão do usuário
+const prompt = require('prompt-sync')();
+
+let testezao = prompt("digite aqui seu nome: ");
+console.log(testezao);
